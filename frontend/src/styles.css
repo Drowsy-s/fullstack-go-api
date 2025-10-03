@@ -1,0 +1,183 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2933;
+  background-color: #f7fafc;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: #f7fafc;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background: #1f2937;
+  color: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+}
+
+.top-bar nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.user-chip {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.card,
+.auth-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  width: min(600px, 100%);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+td,
+th {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5f5;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+button.primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button.primary:not(:disabled):hover {
+  background: #1d4ed8;
+}
+
+.error {
+  color: #dc2626;
+  margin: 0;
+}
+
+.success {
+  color: #16a34a;
+  margin: 0;
+}
+
+.switch-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.centered {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+}
